@@ -1,3 +1,6 @@
+# Thomas Alley's Prezto
+Light customizations for Prezto for my work use
+
 # Configuration Files
 
 Zsh has several system-wide and user-local configuration files.
