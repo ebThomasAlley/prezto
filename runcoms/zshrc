@@ -10,5 +10,13 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-# Customize to your needs...
+# Enable code shell integration if running inside VS Code
+[[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code --locate-shell-integration-path zsh)"
+
+
+# Aliases
+alias ll='ls -la'
+alias caff="echo 'Preventing Sleep...' && caffeinate -d -i"
+
+# initialize starship prompt
 eval "$(starship init zsh)"
