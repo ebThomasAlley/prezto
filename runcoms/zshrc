@@ -16,7 +16,7 @@ fi
 
 # Aliases
 alias ll='ls -la'
-alias caff="echo 'Preventing Sleep...' && caffeinate -d -i"
+alias caff="echo 'Preventing Sleep for 10 hours...' && caffeinate -d -i -t 36000"
 
 # initialize starship prompt
 eval "$(starship init zsh)"
